@@ -2,7 +2,7 @@ import { Handlers } from "$fresh/server.ts";
 import db from "../../shared/db.ts";
 import { Match, Problem } from "./get-matches.ts";
 
-interface Solution{
+export interface Solution{
     id: number;
     solution: string;
 }
