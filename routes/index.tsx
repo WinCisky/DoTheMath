@@ -8,19 +8,18 @@ export default function Home() {
       <Head>
         <title>Fresh App</title>
       </Head>
-      <div>
-        <img
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the fresh logo: a sliced lemon dripping with juice"
-        />
-        <p>
-          Welcome to `fresh`. Try updating this message in the
-          ./routes/index.tsx file, and refresh.
-        </p>
-        <Counter start={3} />
-        <LinkButton>Prossima Sfida</LinkButton>
+      <div class="bg-green-300 h-screen">
+        <div class="flex justify-center pt-20">
+          <img
+            src="/logo.svg"
+            width="128"
+            height="128"
+            alt="the fresh logo: a sliced lemon dripping with juice"
+          />
+        </div>
+        <div class="flex justify-center p-20">
+          <LinkButton>Prossima Sfida</LinkButton>
+        </div>
       </div>
     </>
   );
