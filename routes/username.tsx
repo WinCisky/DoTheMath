@@ -7,7 +7,7 @@ export default function Username() {
         <title>Fresh App</title>
       </Head>
       <div>
-        
+        <p>ciao</p>
       </div>
     </>
   );
