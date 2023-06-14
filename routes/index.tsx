@@ -1,4 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
+import LinkButton from "../components/LinkButton.tsx";
 import Counter from "../islands/Counter.tsx";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
           ./routes/index.tsx file, and refresh.
         </p>
         <Counter start={3} />
+        <LinkButton>Prossima Sfida</LinkButton>
       </div>
     </>
   );

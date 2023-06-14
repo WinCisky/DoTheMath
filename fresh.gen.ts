@@ -9,8 +9,9 @@ import * as $2 from "./routes/api/get-matches.ts";
 import * as $3 from "./routes/api/joke.ts";
 import * as $4 from "./routes/api/random-uuid.ts";
 import * as $5 from "./routes/api/submit-solutions.ts";
-import * as $6 from "./routes/index.tsx";
-import * as $7 from "./routes/username.tsx";
+import * as $6 from "./routes/game.tsx";
+import * as $7 from "./routes/index.tsx";
+import * as $8 from "./routes/username.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 
 const manifest = {
@@ -21,8 +22,9 @@ const manifest = {
     "./routes/api/joke.ts": $3,
     "./routes/api/random-uuid.ts": $4,
     "./routes/api/submit-solutions.ts": $5,
-    "./routes/index.tsx": $6,
-    "./routes/username.tsx": $7,
+    "./routes/game.tsx": $6,
+    "./routes/index.tsx": $7,
+    "./routes/username.tsx": $8,
   },
   islands: {
     "./islands/Counter.tsx": $$0,
