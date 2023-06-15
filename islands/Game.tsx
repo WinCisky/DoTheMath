@@ -53,42 +53,50 @@ export default function Game(props: CounterProps) {
   return (
     <div>
       <p>{description}</p>
-      <Button
-        onClick={() => {
-          solution.push({ id: question, solution: btn1 });
-          setSolution(solution);
-          setQuestion(question + 1);
-        }}
-      >
-        {btn1}
-      </Button>
-      <Button
-        onClick={() => {
-          solution.push({ id: question, solution: btn2 });
-          setSolution(solution);
-          setQuestion(question + 1);
-        }}
-      >
-        {btn2}
-      </Button>
-      <Button
-        onClick={() => {
-          solution.push({ id: question, solution: btn3 });
-          setSolution(solution);
-          setQuestion(question + 1);
-        }}
-      >
-        {btn3}
-      </Button>
-      <Button
-        onClick={() => {
-          solution.push({ id: question, solution: btn4 });
-          setSolution(solution);
-          setQuestion(question + 1);
-        }}
-      >
-        {btn4}
-      </Button>
+      <div class="flex justify-center ">
+        <Button
+          class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-20 w-60"
+          onClick={() => {
+            solution.push({ id: question, solution: btn1 });
+            setSolution(solution);
+            setQuestion(question + 1);
+          }}
+        >
+          {btn1}
+        </Button>
+        <Button
+          class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-20 w-60"
+          onClick={() => {
+            solution.push({ id: question, solution: btn2 });
+            setSolution(solution);
+            setQuestion(question + 1);
+          }}
+        >
+          {btn2}
+        </Button>
+      </div>
+      <div class="flex justify-center">
+        <Button
+          class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-20 w-60"
+          onClick={() => {
+            solution.push({ id: question, solution: btn3 });
+            setSolution(solution);
+            setQuestion(question + 1);
+          }}
+        >
+          {btn3}
+        </Button>
+        <Button
+          class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-20 w-60"
+          onClick={() => {
+            solution.push({ id: question, solution: btn4 });
+            setSolution(solution);
+            setQuestion(question + 1);
+          }}
+        >
+          {btn4}
+        </Button>
+      </div>
     </div>
   );
 }
