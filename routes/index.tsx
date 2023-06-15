@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Fresh App</title>
+        <title>Do the Math</title>
       </Head>
       <SetUser />
       <div class="bg-green-300 h-screen">
