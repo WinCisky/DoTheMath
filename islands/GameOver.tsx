@@ -15,14 +15,14 @@ export default function GameOver(props: GameOverProps) {
       return;
     }
     fetch(
-      `/api/submit-solutions?uuid=${uuid}&id=${props.id}&solutions=${props.solution}`,
+      `/api/submit-solutions?uuid=${uuid}&id=${props.id}&solutions=${props.solution}`
     )
       .then((response) => response.json())
       .then((data) => {
-        if (data.success && data.win){
-            setResult("You Won!");
+        if (data.success && data.win) {
+          setResult("You Won!");
         } else {
-            setResult("You Lost! Someone was faster than you!");
+          setResult("You Lost! Someone was faster than you!");
         }
       })
       .catch((_error) => {
@@ -32,11 +32,18 @@ export default function GameOver(props: GameOverProps) {
 
   return (
     <>
-      <div>
-        <h1>{result}</h1>
-        <Button onClick={() => (window.location.href = "/")}>
+      <div class="bg-green-300 h-screen">
+        <div class="flex justify-center pt-20 text-4xl text-blue-800 font-bold">
+          <h1>{result}</h1>
+        </div>
+        <div class="flex justify-center pt-20">
+          <Button
+            class=" inline-block cursor-pointer px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500"
+            onClick={() => (window.location.href = "/")}
+          >
             Continue
-        </Button>
+          </Button>
+        </div>
       </div>
     </>
   );

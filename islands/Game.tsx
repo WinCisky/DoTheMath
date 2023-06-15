@@ -52,7 +52,11 @@ export default function Game(props: CounterProps) {
 
   return (
     <div>
-      <p>{description}</p>
+      <div class="flex justify-center ">
+        <div class="text-7xl bg-gray-50 w-100 my-20  text-center p-20 font-bold rounded">
+          <p>{description}</p>
+        </div>
+      </div>
       <div class="flex justify-center ">
         <Button
           class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-20 w-60"
