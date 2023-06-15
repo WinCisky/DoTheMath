@@ -9,7 +9,10 @@ export default function Home() {
         <title>Fresh App</title>
       </Head>
       <div class="bg-green-300 h-screen">
-        <div class="flex justify-center pt-20">
+        <div class="flex justify-center text-7xl text-blue-800 font-bold pt-20">
+          DO THE MATH
+        </div>
+        <div class=" flex justify-center pt-20">
           <img
             src="/logo.svg"
             width="128"
