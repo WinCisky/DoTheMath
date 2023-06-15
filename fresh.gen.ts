@@ -16,8 +16,9 @@ import * as $9 from "./routes/username.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 import * as $$1 from "./islands/Game.tsx";
 import * as $$2 from "./islands/GameOver.tsx";
-import * as $$3 from "./islands/SetUser.tsx";
-import * as $$4 from "./islands/Timer2.tsx";
+import * as $$3 from "./islands/QueueJoin.tsx";
+import * as $$4 from "./islands/SetUser.tsx";
+import * as $$5 from "./islands/Timer2.tsx";
 
 const manifest = {
   routes: {
@@ -36,8 +37,9 @@ const manifest = {
     "./islands/Counter.tsx": $$0,
     "./islands/Game.tsx": $$1,
     "./islands/GameOver.tsx": $$2,
-    "./islands/SetUser.tsx": $$3,
-    "./islands/Timer2.tsx": $$4,
+    "./islands/QueueJoin.tsx": $$3,
+    "./islands/SetUser.tsx": $$4,
+    "./islands/Timer2.tsx": $$5,
   },
   baseUrl: import.meta.url,
   config,

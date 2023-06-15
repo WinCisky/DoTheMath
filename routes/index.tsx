@@ -2,6 +2,7 @@ import { Head } from "$fresh/runtime.ts";
 import LinkButton from "../components/LinkButton.tsx";
 import Counter from "../islands/Counter.tsx";
 import SetUser from "../islands/SetUser.tsx";
+import QueueJoin from "../islands/QueueJoin.tsx";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
           />
         </div>
         <div class="flex justify-center p-20">
-          <LinkButton>Prossima Sfida</LinkButton>
+          <QueueJoin />
         </div>
       </div>
     </>

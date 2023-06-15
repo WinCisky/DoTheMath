@@ -94,7 +94,7 @@ export const handler: Handlers = {
     // get all future matches
     const matches = [];
     for await (const entry of db.list({ prefix: ["matches"], start: ["matches", timestamp] })) {
-      console.log(entry);
+      // console.log(entry);
         matches.push(JSON.parse(entry.value) as Match);
     }
 
@@ -117,7 +117,7 @@ export const handler: Handlers = {
 
     // get all future matches ids
     const matchIds = matches.map((match) => match.id);
-    // console.log(matches);
+    // console.log(matchIds);
 
     return new Response(JSON.stringify(matchIds), {
       headers: { "Content-Type": "application/json" },
