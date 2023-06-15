@@ -23,15 +23,6 @@ export default function QueueJoin() {
             break;
           }
         }
-        // set the timer
-        const timer = setInterval(() => {
-          const now = Date.now();
-          if (firstMatch > now) {
-            setCountdown(Math.round((firstMatch - now) / 1000));
-          } else {
-            setMatch(firstMatch);
-          }
-        });
       })
       .catch((_error) => {
         console.log("error");
@@ -46,8 +37,6 @@ export default function QueueJoin() {
         if (queueJoined) {
           // go to game
           window.location.href = `/${matches[matchesIndex]}`;
-        } else {
-          //TODO: do api get-matches
         }
       } else {
         setCountdown(Math.round((matches[matchesIndex] - now) / 1000));
