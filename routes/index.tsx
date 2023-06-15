@@ -1,6 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import LinkButton from "../components/LinkButton.tsx";
 import Counter from "../islands/Counter.tsx";
+import SetUser from "../islands/SetUser.tsx";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Head>
         <title>Fresh App</title>
       </Head>
+      <SetUser />
       <div class="bg-green-300 h-screen">
         <div class="flex justify-center pt-20">
           <img

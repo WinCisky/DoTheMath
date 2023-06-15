@@ -37,7 +37,7 @@ export default function Game(props: CounterProps) {
     if (question >= problems.length) {
       console.log("end of game");
       const encoded = encodeURI(btoa(JSON.stringify(solution)));
-      window.location.href = `/result?solution=${encoded}`;
+      window.location.href = `/gameover?solution=${encoded}&id=${id}`;
     }
 
     //get problem with id question
@@ -48,7 +48,7 @@ export default function Game(props: CounterProps) {
     setBtn2(problem.choices[1]);
     setBtn3(problem.choices[2]);
     setBtn4(problem.choices[3]);
-  }, [question, problems]); // Add question as a dependency
+  }, [question, problems, id]); // Add question as a dependency
 
   return (
     <div>
