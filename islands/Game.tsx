@@ -53,7 +53,7 @@ export default function Game(props: CounterProps) {
   return (
     <div>
       <div class=" flex justify-center ">
-        <div class=" bg-gray-50 w-3/4  my-20   py-20 rounded">
+        <div class=" bg-gray-50 w-3/4  my-5 md:my-20   py-20 rounded">
           <p class="text-3xl md:text-7xl text-center font-bold ">
             {description}
           </p>
@@ -63,7 +63,7 @@ export default function Game(props: CounterProps) {
       <div class="flex flex-wrap justify-center items-center  ">
         <div class="w-full md:w-1/2 flex justify-center">
           <Button
-            class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-20 w-3/4 "
+            class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-15 md:h-20 w-3/4 "
             onClick={() => {
               solution.push({ id: question, solution: btn1 });
               setSolution(solution);
@@ -75,7 +75,7 @@ export default function Game(props: CounterProps) {
         </div>
         <div class="w-full md:w-1/2 flex justify-center">
           <Button
-            class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-20 w-3/4 "
+            class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-15 md:h-20 w-3/4 "
             onClick={() => {
               solution.push({ id: question, solution: btn2 });
               setSolution(solution);
@@ -87,7 +87,7 @@ export default function Game(props: CounterProps) {
         </div>
         <div class="w-full md:w-1/2 flex justify-center">
           <Button
-            class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-20 w-3/4 "
+            class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-15 md:h-20 w-3/4 "
             onClick={() => {
               solution.push({ id: question, solution: btn3 });
               setSolution(solution);
@@ -99,7 +99,7 @@ export default function Game(props: CounterProps) {
         </div>
         <div class="w-full md:w-1/2  flex justify-center   ">
           <Button
-            class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-20 w-3/4      "
+            class="px-3 py-2 bg-blue-800 text-xl text-gray-50 rounded hover:bg-blue-500 m-5 h-15 md:h-20 w-3/4      "
             onClick={() => {
               solution.push({ id: question, solution: btn4 });
               setSolution(solution);
