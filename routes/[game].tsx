@@ -5,8 +5,7 @@ import Game from "../islands/Game.tsx";
 export default function game(props: PageProps) {
   return (
     <>
-      <div class="bg-green-300 h-screen">
-
+      <div class="bg-blue-400 h-screen">
         <Game id={props.params.game} />
       </div>
 

@@ -32,7 +32,7 @@ export default function GameOver(props: GameOverProps) {
 
   return (
     <>
-      <div class="bg-green-300 h-screen">
+      <div class="bg-blue-400 h-screen">
         <div class="flex justify-center pt-20 text-4xl text-blue-800 font-bold">
           <h1>{result}</h1>
         </div>
